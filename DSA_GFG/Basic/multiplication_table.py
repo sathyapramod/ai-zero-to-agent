@@ -36,3 +36,14 @@ def multiplication_table(n):
 
 multiplication_table(5)
 multiplication_table(2)
+
+# Recursive Solution
+
+def multiplication_table_recursive(n, i=1):
+    if (i == 11):
+        return
+    print(f"{n} * {i} = {n*i}")
+    i += 1
+    multiplication_table_recursive(n, i)
+multiplication_table_recursive(5)
+multiplication_table_recursive(2)
